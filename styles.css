@@ -1,0 +1,383 @@
+:root {
+    --dark-blue: #1d428a;
+    --red: #c8102e;
+    --white: #ffffff;
+    --black: #000000;
+    --light-blue: #156cad;
+}
+
+html{
+    width:1280px;
+}
+
+/* skip-link */
+
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+ #skip:focus  {
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+/* header */
+
+header {
+    width:100%;
+    background-color:var(--dark-blue);
+}
+
+header img {
+    width:170px;
+    padding:15px;
+    margin-bottom:-30px;
+}
+
+nav {
+    background-color:var(--light-blue);
+}
+
+nav li {
+    list-style-type:none;
+    display:inline;
+    font-size:13px;
+}
+
+a {
+    text-decoration:none;
+}
+
+nav a {
+    color:white;
+    display:inline-block;
+    padding:10px 24px 10px 24px;
+}
+
+/* body */
+
+.sr-only{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+body {
+    width:1280px;
+    background-color:var(--black);
+    color:var(--white);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* alert banner */
+
+.alert p {
+    text-align:center;
+}
+
+.bold {
+    font-weight:bold;
+    font-size:23px;
+}
+
+.small {
+    font-size:10px;
+    font-weight:lighter;
+    padding: 10px;
+    color:white;
+}
+
+/* top header */
+
+.row {
+    display:flex;
+}
+
+.header_img {
+    width:670px;
+    flex:50%;
+}
+
+.column {
+    flex:50%;
+    padding:280px 100px;
+    background-color:white;
+    color:black;
+}
+
+.column p {
+    font-weight:bold;
+    font-size:50px;
+}
+
+.column button{
+    border-color:var(--dark-blue);
+    background-color:var(--white);
+    padding:10px;
+    cursor:pointer;
+}
+
+/* teams */
+
+.e_conference img{
+    width:55px;
+    padding:10px;
+    background-color:#111111;
+}
+
+.e_conference {
+    margin-left:35px;
+}
+
+.w_conference img{
+    width:55px;
+    padding:10px;
+    background-color:#111111;
+}
+
+.w_conference {
+    margin-left:35px;
+}
+
+.teams h4 {
+    text-align:center;
+}
+
+.teams {
+    margin-bottom:30px;
+}
+
+/* product display */
+
+.grid_container {
+    background-color:white;
+    color:black;
+    padding-left:80px;
+    padding-bottom:50px;
+    padding-top:30px;
+    padding-right:150px;
+}
+
+.grid_container img {
+    width:500px;
+}
+
+.product-1, .product-2, .product-3 {
+    display:flex;
+    justify-content:center;
+}
+
+.green {
+    color:green;
+    display:block;
+    margin-bottom:10px;
+}
+
+.hide{
+    display:none;
+}
+
+.productName{
+    font-weight:bold;
+    display:block;
+    margin-bottom:10px;
+}
+
+.price{
+    display:block;
+    margin-bottom:10px;
+}
+
+.knownFor{
+    color:var(--light-blue);
+    display:block;
+    margin-bottom:20px;
+}
+
+.bold{
+    font-weight:bold;
+    font-size:16px;
+}
+
+#buttons button{
+    background-color:var(--dark-blue);
+    color:white;
+    padding:10px;
+    cursor:pointer;
+}
+
+/*sponsors*/
+
+.sponsors img {
+    width:95px;
+    padding:0 30px 0 30px;
+}
+
+.sponsors {
+    background-color:#111111;
+    padding-bottom:40px;
+}
+
+/*contact form*/
+
+.form {
+    background-color:white;
+    color:black;
+    max-width:300px;
+    margin-left:500px;
+    padding: 20px 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:var(--dark-blue) solid 7px;
+}
+
+label {
+    display:block;
+}
+
+.required1, .required2, .required {
+    display:inline-block;
+    color:red;
+}
+
+input, textarea {
+    width:97%;
+}
+
+input, textarea, fieldset {
+    margin-bottom:15px;
+}
+
+fieldset{
+    border-color:var(--dark-blue);
+    display:grid;
+    grid-template-columns: 30px 1fr 30px 1fr;
+}
+
+fieldset label{
+    display:inline;
+}
+
+input:focus{
+    box-shadow: 2px 1px 4px #222;
+}
+
+input[type="text"].error, input[type="email"].error, input[type="tel"].error, textarea.error{
+    border: 2px solid #DE0B63; 
+}
+
+#mySubmit{
+    display:block;
+}
+
+.notRequired{
+    display:none;
+}
+
+#contactUs span{
+    font-size:13px;
+    color:red;
+}
+
+/*game*/
+.game {
+    background-color:var(--white);
+    color:var(--black);
+    padding:20px;
+}
+
+#userNumber{
+    width:150px;
+}
+
+#playButton{
+    background-color:var(--dark-blue);
+    color:white;
+    padding:10px;
+    font-size:20px;
+}
+
+#gameMsg{
+    color:var(--red);
+}
+
+/*footer*/
+
+footer {
+    background-color:var(--dark-blue);
+    padding:20px;
+    text-align:center;
+}
+
+footer ul{
+    list-style-type:none;
+    margin-left:-40px;
+}
+
+footer li{
+    line-height:1.5em;
+    font-size:15px;
+}
+
+footer h5{
+    font-size:15px;
+}
+
+
+/*LIGHT AND DARK MODE*/
+
+.lightMode{
+    background-color:#ffffff;
+    color:var(--black);
+}
+
+.lightMode .alert{
+    background-color:var(--black);
+    color:var(--white);
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-top:-16px;
+}
+
+.lightMode .teams, .lightMode .game{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    padding-bottom:15px;
+}
+
+.lightMode .w_conference img, .lightMode .e_conference img{
+    background-color:white;
+}
+
+.lightMode footer{
+    color:white;
+}
+
+#sun_btn, #moon_btn{
+    background-color:transparent;
+    border:transparent;
+    padding-bottom:25px;
+    cursor:pointer;
+}
+
+#lightDark img{
+    width:25px;
+}
+
+#lightDark{
+    padding-left:1200px;
+    margin-top:-70px;
+}
+
+.hidden{
+    display:none;
+}
