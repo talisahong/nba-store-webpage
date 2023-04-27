@@ -60,6 +60,11 @@ nav a {
     padding:10px 24px 10px 24px;
 }
 
+#shopNow:hover{
+    background-color:var(--light-blue);
+    color:white;
+}
+
 /* body */
 
 .sr-only{
@@ -215,6 +220,10 @@ body {
     cursor:pointer;
 }
 
+#buttons .button-1:hover, #buttons .button-2:hover, #buttons .button-3:hover{
+    background-color:var(--light-blue);
+}
+
 /*sponsors*/
 
 .sponsors img {
@@ -304,6 +313,11 @@ input[type="text"].error, input[type="email"].error, input[type="tel"].error, te
     color:white;
     padding:10px;
     font-size:20px;
+    cursor:pointer;
+}
+
+#playButton:hover{
+    background-color:var(--light-blue);
 }
 
 #gameMsg{
